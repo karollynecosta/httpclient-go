@@ -1,0 +1,9 @@
+# Binaries for programs
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+*.ide

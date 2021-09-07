@@ -3,6 +3,8 @@ In this project I build a Http Client, one library independent of externals modu
 
 ### Http calls
 GET - Implemented
+POST - Implemented
+Unit Tests - Implemented
 
 ### To initialize 
 First of all
@@ -13,6 +15,11 @@ go mod init <github.com/your_github/repo>
 if you use dependencies
 ```
 go mod tidy
+```
+
+if you want to know about the tests
+```
+go test -cover
 ```
 
 ### How to use?

@@ -5,5 +5,7 @@
 *.dylib
 *.test
 *.out
-
+/server
+*.mod
 *.ide
+*.idea

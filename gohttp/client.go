@@ -1,18 +1,22 @@
 package gohttp
 
-import "net/http"
+import (
+	"net/http"
+)
 
-// HttpClient
+// Client
 /* name collections of attributes */
 type httpClient struct {
+	client *http.Client
+
+	Headers http.Header
 }
 
-func New() HttpClient {
-	client := &httpClient{}
-	return client
-}
 
-type HttpClient interface {
+// Client Public interface
+type Client interface {
+
+	// HTTP calls
 	Get(url string, headers http.Header) (*http.Response, error)
 	Post(url string, headers http.Header, body interface{}) (*http.Response, error)
 	Put(url string, headers http.Header, body interface{}) (*http.Response, error)
